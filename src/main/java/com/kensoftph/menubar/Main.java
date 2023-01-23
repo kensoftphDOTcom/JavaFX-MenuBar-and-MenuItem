@@ -62,8 +62,9 @@ public class Main extends Application {
         // Custom Menu Item
         CustomMenuItem customItem = new CustomMenuItem();
         Button btn = new Button("Kensoft PH");
+        TextField text = new TextField();
         customItem.setHideOnClick(false);
-        customItem.setContent(btn);
+        customItem.setContent(text);
 
         // Separator Menuitem
         SeparatorMenuItem separatorMenuItem = new SeparatorMenuItem();
@@ -79,7 +80,8 @@ public class Main extends Application {
             alert();
         });
 
-        file.getItems().addAll(item1, item2, submenu, separatorMenuItem, item3, separatorMenuItem2, c1, c2);
+        //file.getItems().addAll(item1, item2, submenu, separatorMenuItem, item3, separatorMenuItem2, c1, c2);
+        file.getItems().addAll(item1, item2, submenu, item3);
         about.getItems().add(customItem);
 
         Scene scene = new Scene(layout, 500, 500);
