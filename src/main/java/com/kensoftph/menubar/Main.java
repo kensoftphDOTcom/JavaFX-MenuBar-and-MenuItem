@@ -81,7 +81,7 @@ public class Main extends Application {
         });
 
         //file.getItems().addAll(item1, item2, submenu, separatorMenuItem, item3, separatorMenuItem2, c1, c2);
-        file.getItems().addAll(item1, item2, submenu, item3);
+        file.getItems().addAll(item1, item2, submenu, separatorMenuItem, item3);
         about.getItems().add(customItem);
 
         Scene scene = new Scene(layout, 500, 500);
